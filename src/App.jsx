@@ -7,7 +7,7 @@ import Header from './components/Header'
 function App() {
   return (
     <Container className='App' maxWidth='xl'>
-      <Header />
+      <Header id='main-header-component' />
     </Container>
   )
 }

@@ -15,3 +15,7 @@ html {
 body {
   font-family: 'Commissioner', sans-serif;
 }
+
+#main-header-component {
+  padding: 0;
+}
