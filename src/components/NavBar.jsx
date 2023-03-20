@@ -2,6 +2,7 @@ import { useState } from 'react'
 import {
   AppBar,
   Box,
+  Button,
   Container,
   IconButton,
   Menu,
@@ -133,6 +134,21 @@ const NavBar = () => {
         >
           Logo
         </Typography>
+        <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          {pages.map((page) => (
+            <Button
+              key={page}
+              onClick={handleCloseNavMenu}
+              sx={{
+                color: 'white',
+                display: 'block',
+              }}
+            >
+              {page}
+            </Button>
+          ))}
+        </Box>
+        //* User Menu Icon *//
       </Toolbar>
     </Container>
   </AppBar>
